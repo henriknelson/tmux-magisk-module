@@ -1,0 +1,6 @@
+id=tmux-nelshh
+name=tmux for Android
+version=v3.1c
+versionCode=3
+author=nelshh
+description=A statically built version of the tmux tool for android (aarch64)

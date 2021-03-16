@@ -6,7 +6,7 @@ This Magisk module installs the latest stable version of the tmux tool to the ta
 
 ## Change Log
 
-### v1.0 - 2021-02-15
+### v1.0 - 2021-03-05
 * Initial release
 
 ## Source Code

@@ -1,0 +1,12 @@
+allow shell shell_data_file sock_file {create read write}
+allow shell devpts chr_file {ioctl}
+allow magisk_client shell fifo_file {ioctl}
+allow untrusted_app virtual_ab_prop file {read}
+allow magisk_client untrusted_app_29 unix_stream_socket {read write ioctl}
+allow magisk magisk_file sock_file {ioctl}
+allow magisk_client untrusted_app_29 process {sigchld}
+allow magisk_file sockfs filesystem {associate}
+allow magisk_client vendor_file dir {read}
+allow magisk_client shell_data_file dir {getattr read}
+allow magisk_client system_data_file dir {getattr}
+allow magisk_client postinstall_mnt_dir dir {getattr}

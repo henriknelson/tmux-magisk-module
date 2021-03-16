@@ -1,0 +1,8 @@
+#!/system/bin/sh
+
+bindir="$(dirname "$0")"
+execname="$(basename "$0")"
+
+libdir="/system/bin/rawlibtm:$LD_LIBRARY_PATH"
+
+exec env TMUX_TMPDIR="/data/local/tmp/tmux" LD_LIBRARY_PATH="$libdir" /system/bin/rawtm/tmux-shared "$@"
